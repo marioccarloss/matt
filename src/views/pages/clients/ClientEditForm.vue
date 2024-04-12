@@ -65,7 +65,7 @@ const email = ref('')
                   <VTextField
                     v-model="docNumber"
                     label="Número documento"
-                    placeholder="Número de documento"
+                    placeholder="Número documento"
                   />
                 </VCol>
 
