@@ -56,7 +56,7 @@ const clients = [
         <VCard title="Listado de clientes">
           <VCol
             cols="12"
-            class="d-flex gap-4"
+            class="v-cta-group d-flex gap-4"
           >
             <VBtn to="new-client">
               Nuevo cliente
@@ -132,11 +132,17 @@ const clients = [
                 </td>
                 <td>
                   <VRow class="d-flex flex-nowrap gap-2">
-                    <VBtn to="/edit-client/1">
-                      Edit
+                    <VBtn
+                      to="/edit-client/1"
+                      size="small"
+                    >
+                      Editar
                     </VBtn>
-                    <VBtn color="error">
-                      Delete
+                    <VBtn
+                      color="error"
+                      size="small"
+                    >
+                      Eliminar
                     </VBtn>
                   </VRow>
                 </td>

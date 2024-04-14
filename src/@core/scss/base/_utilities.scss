@@ -169,8 +169,16 @@ $card-spacer-content: 16px;
 
   .timeline-chip{
     border-radius: 6px;
-    background: rgba(var(--v-theme-on-surface), var(--v-hover-opacity)); 
+    background: rgba(var(--v-theme-on-surface), var(--v-hover-opacity));
     padding-block: 5px;
     padding-inline: 10px
   }
+}
+
+.v-cta-group {
+  justify-content: end;
+}
+
+.v-ml-auto {
+  margin-inline-start: auto;
 }

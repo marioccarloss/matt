@@ -5,13 +5,15 @@ const unitTypeId = ref('')
 const stockActually = ref('')
 const brandId = ref('')
 const statusId = ref('')
+
+const items = ref([ 'product 1', 'product 2', 'product 3' ])
 </script>
 
 <template>
   <div>
     <VRow>
       <VCol cols="12">
-        <VCard title="Nuevo Producto">
+        <VCard title="Editar Producto">
           <VCol
             cols="12"
             class="px-4"

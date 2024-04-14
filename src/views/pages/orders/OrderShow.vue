@@ -1,4 +1,8 @@
 <script setup>
+import FilterForm from '@/layouts/components/FilterForm.vue'
+
+const select = ref('Acciones')
+
 const products = [
   {
     id: 1,
@@ -45,19 +49,29 @@ const products = [
   <div>
     <VRow>
       <VCol cols="12">
-        <VCard title="Listado de Productos">
+        <VCard title="Órdenes">
           <VCol
             cols="12"
             class="v-cta-group d-flex gap-4"
           >
             <VBtn to="new-product">
-              Nuevo producto
+              Nueva orden
             </VBtn>
           </VCol>
+          <FilterForm />
           <VTable>
             <thead>
               <tr>
                 <th class="text-uppercase">
+                  <VSelect
+                    v-model="select"
+                    :items="['Acciones', 'Eliminar', 'Exportar', 'Imprimir', 'Enviar por correo electrónico', 'Mover a la papelera', 'Restaurar', 'Restaurar todo', 'Eliminar permanentemente']"
+                  />
+                </th>
+                <th
+                  class="
+                    text-uppercase"
+                >
                   ID
                 </th>
                 <th class="text-uppercase">
@@ -89,6 +103,9 @@ const products = [
                 v-for="product in products"
                 :key="product.id"
               >
+                <td>
+                  <VCheckbox />
+                </td>
                 <td>
                   {{ product.id }}
                 </td>
@@ -129,6 +146,7 @@ const products = [
               </tr>
             </tbody>
           </VTable>
+          <VPagination />
         </VCard>
       </VCol>
     </VRow>

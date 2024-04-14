@@ -36,6 +36,22 @@ export const routes = [
         path: 'new-product',
         component: () => import('@/views/pages/products/ProductNewForm.vue'),
       },
+      {
+        path: 'edit-product/:id',
+        component: () => import('@/views/pages/products/ProductEditForm.vue'),
+      },
+      {
+        path: 'show-orders',
+        component: () => import('@/views/pages/orders/OrderShow.vue'),
+      },
+      {
+        path: 'new-order',
+        component: () => import('@/views/pages/orders/OrderNewForm.vue'),
+      },
+      {
+        path: 'form-layouts',
+        component: () => import('@/pages/form-layouts.vue'),
+      },
     ],
   },
   {

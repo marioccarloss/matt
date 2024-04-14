@@ -15,14 +15,14 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     <VerticalNavLink
       :item="{
         title: 'Ver clientes',
-        icon: 'ri-eye-line',
+        icon: 'ri-team-line',
         to: '/show-clients',
       }"
     />
     <VerticalNavLink
       :item="{
         title: 'Nuevo cliente',
-        icon: 'ri-team-line',
+        icon: 'ri-sticky-note-add-line',
         to: '/new-client',
       }"
     />
@@ -43,12 +43,33 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
     <VerticalNavLink
       :item="{
         title: 'Nuevo producto',
-        icon: 'ri-team-line',
+        icon: 'ri-sticky-note-add-line',
         to: '/new-product',
       }"
     />
   </VerticalNavGroup>
 
+  <VerticalNavGroup
+    :item="{
+      title: 'Ordenes',
+      icon: 'ri-shopping-cart-line',
+    }"
+  >
+    <VerticalNavLink
+      :item="{
+        title: 'Ver ordenes',
+        icon: 'ri-eye-line',
+        to: '/show-orders',
+      }"
+    />
+    <VerticalNavLink
+      :item="{
+        title: 'Nueva orden',
+        icon: 'ri-sticky-note-add-line',
+        to: '/new-order',
+      }"
+    />
+  </VerticalNavGroup>
 
   <VerticalNavGroup
     :item="{
@@ -65,6 +86,14 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       }"
     />
   </VerticalNavGroup>
+
+  <VerticalNavLink
+    :item="{
+      title: 'Form Layouts',
+      icon: 'ri-layout-4-line',
+      to: '/form-layouts',
+    }"
+  />
 
   <VerticalNavLink
     :item="{
